@@ -100,11 +100,9 @@ impl Message {
             command: if let (Some(tags), Some(command)) = (tags, command) {
                 match Command::parse(command, tags) {
                     Ok(c) => {
-                        println!("{:?}", c);
                         Some(c)
                     }
                     Err(e) => {
-                        println!("{:?}", e);
                         None
                     }
                 }

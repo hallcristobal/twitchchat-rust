@@ -1,0 +1,7 @@
+:moonlitelf!moonlitelf@moonlitelf.tmi.twitch.tv PART #capitainetoinon
+:robbehn!robbehn@robbehn.tmi.twitch.tv JOIN #capitainetoinon
+@badges=moderator/1,subscriber/12;color=#FF69B4;display-name=Capipasta;emote-only=1;emotes=65:0-7;id=a5fc263a-a999-453e-adeb-e9653c2983f5;mod=1;room-id=24134839;subscriber=1;tmi-sent-ts=1530882414734;turbo=0;user-id=112789454;user-type=mod :capipasta!capipasta@capipasta.tmi.twitch.tv PRIVMSG #capitainetoinon :FrankerZ
+@badges=subscriber/6;color=#9ACD32;display-name=GanDrakeHD;emotes=1081637:10-17;id=fa397be0-3299-4de7-80f8-c66430ea259a;mod=0;room-id=24134839;subscriber=1;tmi-sent-ts=1530882284996;turbo=0;user-id=55503720;user-type= :gandrakehd!gandrakehd@gandrakehd.tmi.twitch.tv PRIVMSG #capitainetoinon :instafire cirSlain
+:jtv MODE #capitainetoinon +o capipasta
+:jtv MODE #capitainetoinon +o capitainetoinon
+@broadcaster-lang=;emote-only=0;followers-only=-1;r9k=0;rituals=0;room-id=24134839;slow=0;subs-only=0 :tmi.twitch.tv ROOMSTATE #capitainetoinon

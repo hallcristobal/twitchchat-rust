@@ -36,13 +36,12 @@ impl Command {
                 (tag_name, tag_value)
             })
             .collect();
-
-        println!("command: {}, tags: {:?}", command, tags);
+            
         match command {
             "CLEARCHAT" => Ok(Command::CLEARCHAT(ClearChat::parse(tags)?)),
             "GLOBALUSERSTATE" => Ok(Command::GLOBALUSERSTATE(GlobalUserState::parse(tags)?)),
             "PRIVMSG" => Ok(Command::PRIVMSG(PrivMsg::parse(tags)?)),
-            // "ROOMSTATE" => Ok(Command::ROOMSTATE(RoomState::parse(tags)?)),
+            "ROOMSTATE" => Ok(Command::ROOMSTATE(RoomState::parse(tags)?)),
             // "USERNOTICE" => Ok(Command::USERNOTICE(UserNotice::parse(tags)?)),
             // "USERSTATE" => Ok(Command::USERSTATE(UserState::parse(tags)?)),
             "PING" => Ok(Command::PING),

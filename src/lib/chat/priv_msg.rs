@@ -16,7 +16,7 @@ pub struct PrivMsg {
     tmi_sent_ts: NaiveDateTime,
     turbo: bool,
     user_id: usize,
-    user_type: UserType,
+    user_type: Option<UserType>,
     bits: Option<usize>, // TODO: Parse bits tag
     message: Option<String>,
 }
@@ -61,7 +61,7 @@ impl PrivMsg {
             tmi_sent_ts: tmi_sent_ts.unwrap(),
             turbo: get_value!("turbo", tags).unwrap() == "1",
             user_id: get_value_parse!("user-id", tags).unwrap(),
-            user_type: get_value_parse!("user-type", tags).unwrap(),
+            user_type: get_value_parse!("user-type", tags),
             bits: get_value_parse!("bits", tags),
             message: get_value_parse!("message", tags),
         })
